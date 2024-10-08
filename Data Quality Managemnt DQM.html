@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Management Courses</title>
+<link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: url('Background2.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent; /* Very transparent light blue */
+    /* Additional styles */
+}
+
+.header-logo {
+    background: url('0000.png') no-repeat center center;
+    background-size: contain;
+    width: 200px; /* Adjust based on your actual logo size */
+    height: 200px; /* Adjust based on your actual logo size */
+    margin-right: 900px; /* Adjust the margin as needed to push content to the right */
+    /* If the logo has a white background and you want to try to blend it */
+}
+
+/* Main navigation bar */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Dark blue with transparency */
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin-top: 20px; /* Space from the top of the header */
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px; /* Adjust as needed */
+    font-weight: 700; /* Makes text bolder */
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.nav-item.dropdown::after {
+    content: '▼';
+    font-size: 0.5em;
+    margin-left: 5px;
+}
+
+/* Separator line */
+.separator-line {
+    height: 5px;
+    background-color: white;
+    border-radius: 20px;
+    width: 80%; /* Adjust the width as needed */
+    margin: 20px auto;
+}
+
+/* Sub navigation bar */
+.sub-nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 5px 20px; /* Thinner padding for smaller height */
+    background-color: rgba(190, 190, 222, 0.1); /* Lighter blue for the sub nav */
+    border-radius: 20px; /* Rounded corners */
+}
+
+.sub-nav-item {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 16px; /* Smaller font size for sub nav items */
+    font-weight: 400;
+}
+
+.sub-nav-item:hover, .sub-nav-item:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+
+/* Content CSS */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1920px;
+    margin: auto;
+}
+
+.course-box {
+    background-color: rgba(0, 0, 255, 0.1); /* Transparent blue background */
+    color: white; /* White text */
+    margin: 10px; /* Space between boxes */
+    padding: 20px; /* Padding inside the boxes */
+    border-radius: 10px; /* Rounded corners */
+    width: 280px; /* Set width for the boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow to the box */
+}
+
+.course-title {
+    color: rgb(195, 214, 252) ;
+    margin-bottom: 15px; /* Space after the title */
+}
+
+/* Add styles for new elements */
+.course-duration, .course-outline, .course-instructor, .course-prerequisites, .course-class, .course-venue {
+    margin-bottom: 10px; /* Space between paragraphs */
+    line-height: 1.4; /* Line height for readability */
+    font-size: 0.9em; /* Smaller font size for these details */
+}
+
+/* Strong tag within course box to highlight labels */
+.course-box strong {
+    color: #ADD8E6; /* Light blue color to highlight the labels */
+}
+
+</style>
+</head>
+<body>
+    
+    <header>
+        <div class="header-logo"></div> <!-- Logo -->
+        <div class="nav-container">
+            <!-- Main navigation links -->
+            <a href="CoursesPage.html" class="nav-item dropdown">Courses</a>
+            <a href="Services.html" class="nav-item dropdown">Services</a>
+            <a href="Vision_Mission_Values.html" class="nav-item">About us</a>
+            <a href="contact.html" class="nav-item">Work With Us</a>
+        </div>
+    </header>
+        <div class="separator-line"></div> <!-- Separator Line -->
+        <div class="sub-nav-container">
+            <!-- Sub-navigation links -->
+			<a href="ALL.html" class="sub-nav-item">ALL</a>
+            <a href="Document & Content Management DCM.html" class="sub-nav-item">Document & Content Management DCM</a>
+            <a href="Data%20Management%20Governance%20DMG.html" class="sub-nav-item">Data Management Governance DMG</a>
+            <a href="Data%20Quality%20Managemnt%20DQM.html" class="sub-nav-item">Data Quality Managemnt DQM.</a>
+            <a href="Data%20Catalog%20and%20MetaData%20DCM.html" class="sub-nav-item">Data Catalog and MetaData DCM.</a>
+            <a href="KSA%20Data%20Management%20and%20Personal%20Data%20Protection%20DMP.html" class="sub-nav-item">KSA Data Management and Personal Data Protection DMP.</a>
+            <a href="more.html" class="sub-nav-item">More.</a>
+
+            <!-- Repeat for other sub-nav items -->
+        </div>
+   
+
+<div class="content">
+    <!-- Course Box -->
+   
+    
+    <div class="course-box">
+        <h2 class="course-title">Data Quality Management DQM</h2>
+        <p class="course-duration"><strong>Course Duration:</strong> 3 days</p>
+        <p class="course-outline"><strong>Course Outline:</strong> Data Quality is Everyone’s Problem, but Who is Responsible? A set of processes and technologies for identifying, understanding, preventing, escalating, and correcting issues in data that supports effective decision-making and governance across all business processes.</p>
+        <p class="course-instructor"><strong>The Instructor:</strong> English & Arabic</p>
+        <p class="course-prerequisites"><strong>Prerequisites:</strong> Data Management Course</p>
+        <p class="course-class"><strong>Class Type:</strong> Physical class</p>
+        <p class="course-venue"><strong>Venue:</strong> Riyadh - London</p>
+    </div>
+    
+
+    
+
+</div>
+
+</body>
+</html>

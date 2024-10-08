@@ -1,0 +1,512 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  background: url("BackgroundHome.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+header {
+  display: flex;
+  justify-content: space-between; /* Align items to the left */
+  align-items: center;
+  background-color: transparent; /* Assuming a transparent header */
+  padding-top: 0.1rem; /* Reduced top padding */
+  padding-bottom: 0.1rem; /* Reduced bottom padding */
+  color: white;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  z-index: 100;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px; /* Adjust the padding as needed */
+  background-color: #000080; /* Dark blue background */
+}
+
+.header-logo {
+  height: 200px; /* Adjust according to your logo's aspect ratio */
+  margin-right: 30px; /* Space after the logo */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-right: 20px; /* Space between menu items */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.login {
+  background-color: green; /* Green background */
+  border-radius: 20px; /* Rounded corners */
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+/* Assuming you want to use JavaScript to move an indicator */
+.nav-link.active {
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: lightblue; /* The color for the active indicator */
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-top: 0.1rem; /* Reduced top padding */
+  padding-bottom: 0.1rem; /* Reduced bottom padding */
+  text-align: left;
+  padding: 20px;
+  max-width: 1920px; /* Adjust the max width as per your design requirements */
+  margin: auto; /* Center the content */
+}
+
+.text-content h1 {
+  margin-bottom: 0 0 20px 0; /* Add margin to space out the title from the buttons */
+  flex: 1; /* This will make the text content take up the remaining space */
+  max-width: 50%; /* Adjust this to control how much space the text can take */
+  margin-right: 20px; /* This will ensure there's space between the text and the logo */
+  font-size: 2.5rem; /* Adjust font size to match your design */
+  color: white;
+  font-size: 80px
+}
+
+.main-logo {
+  flex-basis: 100%; /* Adjusted flex basis */
+  position: absolute;
+  right: 20px; /* Adjust as needed based on the design */
+  top: 50%;
+  transform: translateY(-50%);
+  height: auto; /* Maintain aspect ratio */
+  width: 50%; /* Adjust this to make the logo larger or smaller */
+  min-width: 200px; /* Minimum width of the logo */
+  z-index: 0;
+}
+
+.button-container {
+  /* Container for buttons to manage spacing between them */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.ReadMore,
+.contact {
+  /* Style both buttons */
+  text-decoration: none;
+  padding: 10px 25px; /* Adjust padding to match the design */
+  margin-right: 10px; /* Space between buttons */
+  border-radius: 5px; /* Rounded corners for buttons */
+  border: none; /* No border unless a design specifies one */
+  font-size: 1rem; /* Adjust font size as needed */
+  color: white; /* Button text color */
+  background: linear-gradient(
+    to right,
+    #18af74,
+    #391bb3,
+    #2a5a98
+  ); /* Gradient background */
+  font-size: 30px; 
+}
+
+.social-media {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer {
+  color: white;
+  padding: 0;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  display: inline-block;
+  width: 50px; /* Width of the line */
+  height: 2px; /* Height of the line */
+  background-color: #18af74;
+  margin-right: 10px;
+}
+
+.get-social {
+  margin: 0 20px; /* Space between the line and the text */
+}
+
+.social-icons {
+  display: inline-flex;
+  align-items: center;
+}
+
+.social-icon {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.lang-selector {
+  position: relative;
+}
+
+.selected-lang {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.lang-dropdown {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  z-index: 100;
+}
+
+.lang-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0;
+}
+
+.lang-dropdown li:hover {
+  background-color: #f4f4f4;
+}
+.lang-dropdown li a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
+
+
+
+
+/* Supporting Other device sizes */
+
+/* The desktop-first pre-defined media queries: */
+/* 2xl */
+@media (max-width: 1536px) {}
+
+/* xl */
+@media (max-width: 1440px) {
+  .text-content h1 {
+    font-size: 60px
+  }
+}
+@media (max-width: 1280px) {}
+
+/* lg */
+@media (max-width: 1024px) {
+  .text-content h1 {
+    font-size: 50px
+  }
+}
+
+/* md (tablet)*/
+@media (max-width: 768px) {
+  .text-content h1 {
+    font-size: 35px
+  }
+  .ReadMore,
+.contact {
+  padding: 10px 25px; /* Adjust padding to match the design */
+  margin-right: 10px; /* Space between buttons */
+  font-size: 15px; 
+}
+.get-social {
+  margin: 0 20px; /* Space between the line and the text */
+  font-size: 13px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 15px;
+  margin: 0 10px;
+}
+}
+
+/* sm */
+@media (max-width: 640px) {
+   
+  nav li {
+    margin-right: 10px; 
+    /*Space between menu items*/
+  }
+  
+  .nav-link {
+    padding: 5px;
+  }
+  
+  .login {
+    padding: 5px 8px;
+  }
+  
+  .nav-right { /* Important to change the size of the titiles of navbar */
+    font-size: 10px;
+  }
+  .text-content h1 {
+    font-size: 25px
+  }
+}
+
+/* Large phones (Iphone Pro max) */
+@media (max-width: 475px) {
+  
+  
+  nav li {
+    margin-right: 8px; 
+    /*Space between menu items*/
+  }
+  
+  .nav-link {
+    padding: 5px;
+  }
+  
+  .login {
+    padding: 5px 10px;
+  }
+  
+  .nav-right { /* Important to change the size of the titiles of navbar */
+    font-size: 9px;
+  }
+  /* .content {No need to change } */
+  
+  .text-content h1 {
+    font-size: 30px
+  }
+  .main-logo {
+  right: 5px; /* Changed to save some space for the Title */
+}
+.header-logo {
+  height: 130px; /* Adjust according to your logo's aspect ratio */
+  margin-right: 10px; /* saving space for the bar */
+}
+.ReadMore,
+.contact {
+  padding: 10px 25px; /* Adjust padding to match the design */
+  margin-right: 10px; /* Space between buttons */
+  font-size: 15px; 
+}
+.get-social {
+  margin: 0 20px; /* Space between the line and the text */
+  font-size: 13px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 15px;
+  margin: 0 10px;
+}
+
+}
+
+
+/* Mediam phones */
+@media (max-width: 375px) {
+  
+  
+  nav li {
+    margin-right: 5px; 
+    /*Space between menu items*/
+  }
+  
+  .nav-link {
+    padding: 3px;
+  }
+  
+  .login {
+    padding: 4px 8px;
+  }
+  
+  /* Assuming you want to use JavaScript to move an indicator */
+  .nav-link.active {
+    position: relative;
+    
+  }
+  .nav-right { /* Important to change the size of the titiles of navbar */
+    font-size: 9px;
+  }
+  /* .content {No need to change } */
+  
+  .text-content h1 {
+    font-size: 25px
+  }
+  .main-logo {
+  right: 4px; /* Changed to save some space for the Title */
+}
+.header-logo {
+  height: 100px; /* Adjust according to your logo's aspect ratio */
+  margin-right: 8px; /* saving space for the bar */
+}
+.ReadMore,
+.contact {
+  padding: 10px 25px; /* Adjust padding to match the design */
+  margin-right: 10px; /* Space between buttons */
+  
+  font-size: 12px; 
+  
+}
+
+}
+
+
+/* small phones */
+@media (max-width: 320px) {
+  
+  
+  nav li {
+    margin-right: 5px; 
+    /*Space between menu items*/
+  }
+  
+  .nav-link {
+    padding: 4px;
+  }
+  
+  .login {
+    padding: 3px 8px;
+  }
+  
+  .nav-right { /* Important to change the size of the titiles of navbar */
+    font-size: 8px;
+  }
+  /* .content {No need to change } */
+  
+  .text-content h1 {
+    font-size: 20px
+  }
+  .main-logo {
+  right: 2px; /* Changed to save some space for the Title */
+  
+}
+.header-logo {
+  height: 100px; /* Adjust according to your logo's aspect ratio */
+  margin-right: 8px; /* saving space for the bar */
+}
+.ReadMore,
+.contact {
+  padding: 8px 15px; /* Adjust padding to match the design */
+  margin-right: 10px; /* Space between buttons */
+  margin-top: 5px;
+  font-size: 20px;  
+}
+.get-social {
+  margin: 0 20px; /* Space between the line and the text */
+  font-size: 10px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 10px;
+  margin: 0 10px;
+}
+
+}
+
+
+
+/* Desktop container utility class: */
+
+/* .container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+} */
+
+/* 2xl */
+/* @media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+} */
+
+/* xl */
+/* @media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+} */
+
+/* lg */
+/* @media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+} */
+
+/* md */
+/* @media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+} */
+
+/* sm */
+/* @media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+} */
+
+/* xs */
+/* @media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+} */

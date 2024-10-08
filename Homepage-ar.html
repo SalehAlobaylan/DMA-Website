@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+    <title>Data Management Association</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Garet&display=swap" rel="stylesheet">
+  <style>
+    body{
+      direction: rtl;
+    }
+    .main-logo {
+
+    left: 20px;
+    right: auto;
+
+}
+.text-content h1 {
+
+    text-align: right;
+}
+nav li {
+    margin-left: 20px;
+    margin-right: auto;
+}
+  </style>
+</head>
+<body>
+
+
+    <header>
+        
+        <div class="nav-right">
+          
+          <nav>
+            <ul>
+                <li><a href="Homepage-ar.html" class="nav-link active" id="home">الصفحة الرئيسية</a></li>
+                <li><a href="Vision_Mission_Values-ar.html" class="nav-link" id="about">من نحن</a></li>
+                <li><a href="Registration-ar.html" class="login">تسجيل الدخول</a></li>
+            </ul>
+        </nav>
+        <a href="Homepage.html" class="nav-link" style="font-weight: bold;">En</a>
+        </div>
+        <img src="0000.png" alt="DMA Logo" class="header-logo">
+    </header>
+
+
+    <main>
+        <section class="content">
+            <div class="text-content">
+                <h1 style="">جمعية إدارة البيانات وأبحاث أنظمة دعم القرار</h1>
+                <div class="button-container">
+                    <a href="Vision_Mission_Values-ar.html" class="ReadMore" style="">اقرأ اكثر!</a>
+                    <a href="contact-ar.html" class="contact" style="">تواصل معنا</a>
+                </div>
+            </div>
+            <img src="0000.png" alt="DMA Logo" class="main-logo">
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p class="get-social">وسائل التواصل</p>
+            <span class="line"></span>
+            <div class="social-icons">
+                <a href="http://instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="http://facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="http://twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const navLinks = document.querySelectorAll('nav ul li a');
+        const indicator = document.querySelector('.nav-indicator');
+      
+        // Calculate and move indicator to the active link
+        function moveIndicator(e) {
+          const width = e.offsetWidth;
+          const leftOffset = e.offsetLeft;
+          indicator.style.width = `${width}px`;
+          indicator.style.left = `${leftOffset}px`;
+        }
+      
+        // Add click event to each nav link
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            // Remove active class from all links
+            navLinks.forEach(link => link.classList.remove('active'));
+            // Add active class to the clicked link
+            this.classList.add('active');
+            // Move the indicator
+            moveIndicator(this);
+          });
+        });
+      
+        // Initialize indicator position and width
+        const activeLink = document.querySelector('.nav-link.active');
+        if (activeLink) {
+          moveIndicator(activeLink);
+        }
+      });      
+    </script>
+ <script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("langDropdown");
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+  }
+
+</script>
+</body>
+</html>

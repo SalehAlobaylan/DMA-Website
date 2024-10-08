@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+    <title>Data Management Association</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Garet&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+
+
+    <header>
+        <img src="0000.png" alt="DMA Logo" class="header-logo">
+        <div class="nav-right">
+          
+          <nav>
+            <ul>
+                <li><a href="Homepage.html" class="nav-link active" id="home">HOME</a></li>
+                <li><a href="Vision_Mission_Values.html" class="nav-link" id="about">ABOUT US</a></li>
+                <li><a href="Registration.html" class="login">LOG IN</a></li>
+            </ul>
+        </nav>
+        <a href="contact-ar.html" class="nav-link" style="font-weight: bold;">عربي</a>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="content">
+            <div class="text-content">
+                <h1 style="font-size: 80px">Data Management and Decision Making Support Systems Research Association</h1>
+                <div class="button-container">
+                    <a href="#readmore" class="ReadMore" style="font-size: 30px">Email:Info@dma.sa</a>
+                    <a href="contact.html" class="contact" style="font-size: 30px">Phone:0114051234</a>
+                </div>
+                <button class="contact" style="margin-top: 10px; font-size: 2em; position: absolute;">Creat a ticket</button>
+            </div>
+            <img src="0000.png" alt="DMA Logo" class="main-logo">
+        </section>
+    </main>
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <p class="get-social">GET SOCIAL</p>
+            <span class="line"></span>
+            <div class="social-icons">
+                <a href="http://instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="http://facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="http://twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const navLinks = document.querySelectorAll('nav ul li a');
+        const indicator = document.querySelector('.nav-indicator');
+      
+        // Calculate and move indicator to the active link
+        function moveIndicator(e) {
+          const width = e.offsetWidth;
+          const leftOffset = e.offsetLeft;
+          indicator.style.width = `${width}px`;
+          indicator.style.left = `${leftOffset}px`;
+        }
+      
+        // Add click event to each nav link
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            // Remove active class from all links
+            navLinks.forEach(link => link.classList.remove('active'));
+            // Add active class to the clicked link
+            this.classList.add('active');
+            // Move the indicator
+            moveIndicator(this);
+          });
+        });
+      
+        // Initialize indicator position and width
+        const activeLink = document.querySelector('.nav-link.active');
+        if (activeLink) {
+          moveIndicator(activeLink);
+        }
+      });      
+    </script>
+ 
+</body>
+</html>

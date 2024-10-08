@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Data Management Association</title>
+	<link rel="stylesheet" href="styles.css">
+    <style>
+
+body {
+      font-family: Arial, sans-serif;
+      color: white;
+      background: url('BackgroundHome.jpg') no-repeat center center fixed;
+      background-size: cover;
+      direction: rtl;
+    }
+
+    nav {
+    display: flex;
+    justify-content: space-between;
+}
+	.nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 18px; 
+    font-weight: 700;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.nav-item.dropdown::after {
+    content: '▼';
+    font-size: 0.5em;
+    margin-right: 5px;
+}
+
+  .header {
+    background-color: #13134d; /* Adjust the color to match your screenshot */
+    background: rgb(45, 27, 117);
+    background: linear-gradient(15deg, rgb(26, 15, 70) 25%, rgb(17, 49, 85) 50%, rgb(30, 62, 105) 84%);
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-right: 14%;
+    border-radius: 30px;
+    width:  60%;
+    height: fit-content;
+    margin-top: 5%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+
+    
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+
+
+  .Old_CSS{
+    font-family: Arial;
+        /* body, html {       Old Body
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+             background: url('BackgroundHome.jpg') no-repeat center center fixed;
+			background-size: cover;
+            color: white;
+			 direction: rtl;
+        } */
+
+        /* .navbar {              OLD nav bar
+            background-color: 391BB3;
+            overflow: hidden;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #18AF74; 
+        } */
+}
+        
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 2em;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            padding: 2em;
+            width: 500px;
+			height: 700px;
+            margin: 1em;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
+        .card h2 {
+            border-bottom: 2px solid #18AF74; /* Border color in RGB */
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+
+        .card p, .card ul {
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        .card ul {
+            list-style: none;    /*here to cancel the original Dots */
+            padding: 0;
+        }
+
+        .card ul li::before {
+            content: '• ';           /*Here to add new dots */
+            color: #18AF74; /* Bullet point color in RGB */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div style="display: flex;" > <!--Here Header starts-->
+        <a href="Homepage.html">
+          <div>
+            <img style="height:200px ; margin-right: 50px" src="0000.png" alt="DMA Logo" class="header-logo">
+          </div>
+        </a>
+        
+        
+        
+      <div class="header">
+        <nav>
+          <h2 style="font-size: 20px;">من نحن</h2>
+          <div class="nav-right">
+            
+            <ul>
+            
+              <li class="dropdown">
+              
+                <a href="CoursesPage-ar.html" class="nav-item dropdown">الدورات</a>
+              
+              </li>
+              <li class="dropdown">
+                <a href="Services-ar.html" class="nav-item dropdown">الخدمات</a>
+              
+              </li>
+              <li class="nav-item" styl="margin-top: 10px; padding: 2px; border: 2px solid #18AF74; border-radius: 8px; "><a href="Vision_Mission_Values-ar.html">من نحن</a></li>
+            
+            
+            </ul>
+    
+            <a href="Vision_Mission_Values.html" class="nav-item" style="font-family:Arial, Helvetica;">En</a>
+    
+    
+            <!-- <div class="lang-selector">     <---- this is the drop down menu we changed
+              <button class="selected-lang" onclick="toggleDropdown()">Select Language</button>
+              <ul class="lang-dropdown" id="langDropdown">
+                <li><a href="Services.html">English</a></li>
+                <li><a href="Services-ar.html">العربية</a></li>
+              </ul>
+            </div> -->
+    
+    
+          </div>
+        
+          
+        </nav>
+      </div>
+      
+    </div> <!--End of navbar-->
+
+
+
+<!-- <div class="navbar">              Old nav bar
+	 <div class="navbar-logo">
+        <img style="height: 200px; " src="0000.png" alt="DMA Logo" class="header-logo">
+    </div>
+    <div style="flex-grow: 1;">
+		 <a style="font-size: 30px" href="Homepage-ar.html">الصفحة الئيسية</a>
+        <a style="font-size: 30px" href="CoursesPage-ar.html">الدورات</a>
+        <a style="font-size: 30px" href="Services-ar.html">الخدمات</a>
+        <a style="font-size: 30px" href="contact-ar.html">اعمل معنا </a>
+		
+    </div>
+    <div class="lang-selector">
+          <button class="selected-lang" onclick="toggleDropdown()">اختيار اللغة </button>
+          <ul class="lang-dropdown" id="langDropdown">
+            <li><a href="Vision_Mission_Values.html">English</a></li>
+            <li><a href="Vision_Mission_Values-ar.html">العربية</a></li>
+          </ul>
+        </div>
+</div> -->
+
+
+
+
+
+
+<div class="container">
+    <div class="card">
+        <h2 style="font-size: 60px; text-align: center;">الرؤية </h2>
+        <p style="font-size: 280%;  text-align: center;">نسعى لتجسيد
+وتأسيس مفهوم
+ادارة البيانات
+وانظمة دعم القرار
+في جميع المجالات
+في السعودية
+للإرتقاء لمستوى
+المعايير العالمية.</p>
+    </div>
+    <div class="card">
+        <h2 style="font-size: 60px; text-align: center;">الرسالة</h2>
+        <p style="font-size: 280%; direction: l; text-align: center">تنمية القدرات ورفع
+الناتج المحلي
+والإستفادة من
+التعاون وتبادل
+المعرفة لكيفية
+التعامل مع البيانات
+في ادارتها و
+حوكمتها وطريقة
+اتخاذ القرار الصحيح
+من خلال تقديم
+الدعم الفعال و
+المنتجات.</p>
+    </div>
+    <div class="card">
+        <h2 style="font-size: 60px; text-align: center;">القيم</h2>
+        <ul style="font-size: 280%; text-align: right;">
+            <li>الكفاءة</li>
+            <li>التعاون</li>
+            <li>الجودة</li>
+            <li>الإبتكار</li>
+            <li>المسؤولية المجتمعية</li>
+        </ul>
+    </div>
+</div>
+	<script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const navLinks = document.querySelectorAll('nav ul li a');
+        const indicator = document.querySelector('.nav-indicator');
+      
+        // Calculate and move indicator to the active link
+        function moveIndicator(e) {
+          const width = e.offsetWidth;
+          const leftOffset = e.offsetLeft;
+          indicator.style.width = `${width}px`;
+          indicator.style.left = `${leftOffset}px`;
+        }
+      
+        // Add click event to each nav link
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            // Remove active class from all links
+            navLinks.forEach(link => link.classList.remove('active'));
+            // Add active class to the clicked link
+            this.classList.add('active');
+            // Move the indicator
+            moveIndicator(this);
+          });
+        });
+      
+        // Initialize indicator position and width
+        const activeLink = document.querySelector('.nav-link.active');
+        if (activeLink) {
+          moveIndicator(activeLink);
+        }
+      });      
+    </script>
+<script>
+    function toggleDropdown() {
+      var dropdown = document.getElementById("langDropdown");
+      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    }
+
+  </script>
+</body>
+</html>

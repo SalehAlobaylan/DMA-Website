@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AboutUsSizes.css">
+    <title>About Us - Data Management Association</title>
+	<link rel="stylesheet" href="styles.css">
+    <style>
+/* body, html {  Old body
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('BackgroundHome.jpg') no-repeat center center fixed;
+	background-size: cover;
+    color: white;
+} */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: url('BackgroundHome.jpg') no-repeat center center fixed;
+	background-size: cover;
+  }
+  p {
+    font-size: 1.4em;
+  }
+  
+  
+  .header_logo{
+    height:15em ; margin-left: 50px 
+  }
+  
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 1.2em; 
+}
+/* 
+.nav-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.nav-item.dropdown::after {
+    content: '▼';
+    font-size: 0.5em;
+    margin-left: 5px;
+} */
+
+.header {
+    background-color: #13134d; /* Adjust the color to match your screenshot */
+    background: rgb(45, 27, 117);
+    background: linear-gradient(15deg, rgb(26, 15, 70) 25%, rgb(17, 49, 85) 50%, rgb(30, 62, 105) 84%);
+    padding: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 30px;
+    width:  60em;
+    height: fit-content;
+    margin-top: 5%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+
+    
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+
+
+        
+
+        /* .navbar {  Old nav bar
+            background-color: 391BB3; 
+            overflow: hidden;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #18AF74; 
+        } */
+
+        
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 2em;
+        }
+       /* .container {   USE this container for mobile phones
+            max-width: 1536px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        } */
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            padding: 2em;
+            width: 20em;
+			      height: 30em;
+            margin: 1em;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
+        .card h2 {
+            border-bottom: 2px solid #18AF74; /* Border color in RGB */
+            /* padding-bottom: 0.5em; */
+            margin-bottom: 0.5em;
+            font-size: 3em; 
+            text-align: center
+        }
+
+        .card p, .card ul {
+            text-align: left;
+            line-height: 1.6em;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.8em
+        }
+
+        .card ul li::before {
+            content: '• ';
+            color: #18AF74; /* Bullet point color in RGB */
+            font-weight: bold;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div style="display: flex;" > <!--Here Header starts-->
+
+    
+        <a href="Homepage.html">
+          <div>
+            <img class="header_logo" src="0000.png" alt="DMA Logo" class="eader-logo">
+          </div>
+        </a>
+        
+        
+        
+      <div class="header">
+        <nav>
+          <h1>About us</h1>
+          <div class="nav-right">
+            
+            <ul>
+            
+              <li class="dropdown">
+              
+                <a href="CoursesPage.html" class="nav-item dropdown">Courses</a>
+              
+              </li>
+              <li class="dropdown">
+                <a href="Services.html" class="nav-item dropdown">Services</a>
+              
+              </li>
+              <li class="nav-item" styl="margin-top: 10px; padding: 2px; border: 2px solid #18AF74; border-radius: 8px; "><a href="Vision_Mission_Values.html">About us</a></li>
+            
+            
+            </ul>
+  
+            <a href="Vision_Mission_Values-ar.html" class="nav-item" style="font-family:Arial, Helvetica;">عربي</a>
+  
+  
+            <!-- <div class="lang-selector">     <---- this is the drop down menu we changed
+              <button class="selected-lang" onclick="toggleDropdown()">Select Language</button>
+              <ul class="lang-dropdown" id="langDropdown">
+                <li><a href="Services.html">English</a></li>
+                <li><a href="Services-ar.html">العربية</a></li>
+              </ul>
+            </div> -->
+  
+  
+          </div>
+        
+          
+        </nav>
+      </div>
+      
+    </div> <!--End of navbar-->
+
+
+<!-- <header>
+    <div class="navbar" >
+        <a href="Homepage.html">
+    	 <div class="navbar-logo"  >
+                <img style="height: 200px; margin-right: 200px" src="0000.png" alt="DMA Logo" class="header-logo">
+            </div>
+        </a>
+        <div style="flex-grow: 1;">
+    		 <a style="font-size: 30px" href="Homepage.html">Home</a>
+            <a style="font-size: 30px" href="CoursesPage.html">Courses</a>
+            <a style="font-size: 30px" href="Services.html">Services</a>
+            <a style="font-size: 30px" href="contact.html">Work With Us</a>
+        </div>
+       <div class="lang-selector">
+              <button class="selected-lang" onclick="toggleDropdown()">Select Language</button>
+              <ul class="lang-dropdown" id="langDropdown">
+                <li><a href="Vision_Mission_Values.html">English</a></li>
+                <li><a href="Vision_Mission_Values-ar.html">العربية</a></li>
+              </ul>
+            </div>
+    </div>
+</header> -->
+
+<div class="container">
+    <div class="card">
+        <h2>VISION</h2>
+        <p style=>Leadership in data management and decision support 
+          systems research at the national level, enriching the data economy,
+           and effective community participation</p>
+    </div>
+    <div class="card">
+        <h2 >MISSION</h2>
+        <p >Strengthening and developing human 
+          and material capabilities in the field of data management,
+           governance, and decision making methodologies, through education,
+            training and development, and creating highly efficient operational models.</p>
+    </div>
+    <div class="card">
+        <h2>VALUES</h2>
+        <ul >
+            <li>Efficiency</li>
+            <li>Collaboration</li>
+            <li>Quality</li>
+            <li>Innovation</li>
+            <li>Integrity</li>
+            <li>User Focus</li>
+        </ul>
+    </div>
+</div>
+<script>
+    function toggleDropdown() {
+      var dropdown = document.getElementById("langDropdown");
+      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    }
+
+  </script>
+</body>
+</html>
